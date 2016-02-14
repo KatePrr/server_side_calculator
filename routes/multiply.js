@@ -3,11 +3,15 @@ var router = express.Router();
 var path = require('path');
 
 
-var multi = function(x,y){
-    var number = x * y;
-    number = number.toString();
-    return number;
-};
+router.post('/', function(req, res) {
 
-exports.multi = multi;
+    var x = parseInt(req.body.x);
+    var y = parseInt(req.body.y);
+    number = x * y;
+    number = number.toString();
+
+    res.send(number);
+});
+
+
 module.exports = router;
