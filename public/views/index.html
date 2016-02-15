@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-        <html>
+    <html>
+
 <head>
-    <title>Server Side Calculator</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <title>Server Side Calculator</title>
+
 </head>
+
 <body>
     <h1>Calculator</h1>
 
-    <!--change type='text' to number??-->
-<form id="calculator-form">
-    <label for="numberInput1">x:</label>
-    <input type="text" id="numberInput1" name="x" />
+    <form id="calculator-form">
 
-    <button class="operatorType" id="add">+</button>
-    <button class="operatorType" id="subtract">-</button>
-    <button class="operatorType" id="multiply">*</button>
-    <button class="operatorType" id="divide">÷</button>
+        <label for="numberInput1">x:</label>
+        <input type="text" id="numberInput1" name="x" />
 
-    <label for="numberInput2">y:</label>
-    <input type="text" id="numberInput2" name="y" />
+         <button class="operatorType" id="add">+</button>
+         <button class="operatorType" id="subtract">-</button>
+         <button class="operatorType" id="multiply">*</button>
+         <button class="operatorType" id="divide">÷</button>
 
-    <button type="submit" id="submit">submit</button>
-    <button id="clear">clear</button>
-    <div id="resultDiv"></div>
+         <label for="numberInput2">y:</label>
+         <input type="text" id="numberInput2" name="y" />
+
+         <button type="submit" id="submit">submit</button>
+         <button id="clear">clear</button>
+
+         <div id="resultDiv"></div>
+
+    </form>
 
 
-</form>
-
-
-
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
 </body>
+
 </html>

@@ -2,8 +2,6 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
-//var data = require('./routes/data');
-//var math = require('./routes/math');
 var add = require('./routes/add');
 var subtract = require('./routes/subtract');
 var multiply = require('./routes/multiply');
@@ -14,7 +12,6 @@ var divide = require('./routes/divide');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('port', process.env.PORT || 5000);
 
-//app.use('/data', data);
 app.use('/add', add);
 app.use('/subtract', subtract);
 app.use('/multiply', multiply);
